@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Input concepts</h1>
+    <form action="backend.php">
+        <!-- input types number text date checkbox radio(button) textare passwordemail -->
+        <!-- label is used to link text with input so when click text input box is selected -->
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="name">
+        </div>
+        <br>
+        <div> 
+            Role: <input type="text" name="role">
+        </div>
+        <br>
+        <div> 
+            Email: <input type="email" name="email">
+        </div>
+        <br>
+        <div> 
+            date: <input type="date" name="mydate">
+        </div>
+        <br>
+        <div> 
+            Eligble: <input type="checkbox" name="mydEligiblitycheck" checked>
+        </div>
+        <br>
+        <div> 
+            Gebder: Male <input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Other<input type="radio" name="myGender">
+        </div>
+        <br>
+        <div> 
+            Username: <input type="text" name="uname" checked>
+        </div>
+        <br>
+        <div>
+            Password: <input type="password" name="password">
+        </div>
+        <br>
+        <div>
+            Choose gift:
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Mer">Mercedice</option>
+                <option value="Aud" selected>Audi</option>
+            </select>
+            <label for="bike">Bike</label>
+            <select name="myCar" id="bike">
+                <option value="Pul" selected>Pulser</option>
+                <option value="tvs" >tvs</option>
+            </select>   
+        </div>
+        <br>
+        <div> 
+            Feedback
+            <br>
+            <textarea name="Feedback"cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div> 
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+       
+    </form>
+</body>
+</html>

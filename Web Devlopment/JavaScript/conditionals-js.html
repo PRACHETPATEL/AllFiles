@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope,Conditional & switch case</title>
+</head>
+<body>
+    <!-- div>ul>li{item-&}*6 -->
+    <!-- div.container>ul.item>li#item${item-$}*5 -->
+    <div class="container">
+        <ul class="item">
+            <li id="item1"><input type="text"></li>
+            <li id="item2">item-2</li>
+            <li id="item3">item-3</li>
+            <li id="item4">item-4</li>
+            <li id="item5">item-5</li>
+        </ul>
+    </div>
+    <script>
+        var string1="This is a string";//scope global
+        console.log(string1);
+        var string1="hi";
+        console.log(string1);
+        let a="hello";
+        console.log(a);
+        {
+            let a="hi"
+            console.log(a);
+        }
+        const x="this cannpt be changed";
+        console.log(a);
+        console.log(x);
+        let age=19;
+        if(age>=18){
+            console.log("You can vote");
+        }
+        else console.log("You cannot vote");
+        const cups=5;
+        switch(cups){
+            case age:
+                console.log("You are "+age+" years old");
+                break;
+            case 4:
+                console.log("cups=4");
+            case 5:
+                console.log("cups=5");
+                break;
+            case 6:
+                console.log("cups=5");
+                break;
+            default:
+                console.log("default");    
+        }
+    </script>
+</body>
+</html>

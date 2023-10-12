@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* font-family:'Courier New', Courier, monospace; */
+        }
+        body{
+            background-color: rgba(128, 97, 128);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container{
+            display: inline-flex; 
+        }   
+        .container .static{
+            color: white;
+            font-size: 60px;
+            font-weight: 400;
+        }   
+        .container .dynamic{
+            margin-left: 15px;
+            overflow: hidden;
+            line-height: 66px;
+            height: 60px;
+        }
+        .dynamic li span{
+            content: "";
+            position: relative;
+            top:0;
+            /* background: red; */
+            animation: slide 12s steps(4) infinite;
+            /* animation-delay:2s; */
+        }
+        @keyframes slide {
+            0%{
+                top:0px;
+            }
+            100%{
+                top:-270px;
+                /* animation-iteration-count: infinite; */
+            }
+        } 
+        .dynamic li{
+            font-size: 60px;
+            font-weight: 500;
+            color: black;
+        }
+        /* .dynamic li span{
+            position:relative;
+        } */
+        .dynamic li span::after{
+            content: "";
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            border-left: 3px solid black;
+            left: 0%;
+            background-color: rgba(128, 97, 128);
+            animation: typing 1.5s cubic-bezier(0, 0, 0, 1.4) infinite;
+            animation-direction:alternate;
+        }
+        @keyframes typing {
+            0%{
+                border-left: 3px solid rgba(0, 0, 0, 0);
+            }
+            25%{
+                border-left: 3px solid rgb(0, 0, 0);
+            }
+            50%{
+                border-left: 3px solid rgba(0, 0, 0, 0);
+            }
+            75%{
+                border-left: 3px solid rgb(0, 0, 0);
+            }
+            100%{
+                border-left: 3px solid rgba(0, 0, 0, 0);
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="static">Hello</div>
+                <ul class="dynamic">
+                    <li><span>Prachet Patel</span></li>
+                    <li><span>How</span></li>
+                    <li><span>are</span></li>
+                    <li><span>you?</span></li>
+                </ul>
+            </span>
+    </div>
+</body>
+</html>

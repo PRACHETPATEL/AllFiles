@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul class="item" id="nav">
+            <li id="item1" class="list">List-1</li>
+            <li id="item2" class="list">List-2</li>
+            <li id="item3" class="list">List-3</li>
+            <li id="item4" class="list">List-4</li>
+            <li id="item5" class="list">List-5</li>
+        </ul>
+    </div>
+    <div class="container"></div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+        let nav=document.getElementById('nav');
+        console.log(nav);
+        //nav.innerHTML="<li>Dynamic Element</li>"
+        //nav.className;
+        let containers=document.getElementsByClassName('container');
+        console.log(containers);
+        let sel=document.querySelectorAll('.list');
+        let sel2=document.querySelector('#nav>li');
+        console.log("CSS Selectors:",sel2);
+        //getElementsByName/Tag and many more
+    </script>
+</body>
+</html>

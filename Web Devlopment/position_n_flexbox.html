@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: black;
+            /* color: white; */
+            height: 1000px;
+        }
+        .container{
+            border: 2px solid grey;
+            margin: 50px auto;
+            padding: 20px;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            background-color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .item{
+            border: 2px solid grey;
+            width: 250px;
+            height:250px;
+            /* margin:auto; */
+            padding: 20px;
+        }
+        #box1{
+           position: relative;
+           left: 100px;
+        }
+        #box2{
+            position:absolute;
+            top:150px;
+            left:20%;
+        }
+        #box3{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            color: wheat;
+        }
+        #box4{
+            position: sticky;
+            top:3px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <title>Position and flexbox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="box1">box 1</div>
+        <div class="item" id="box2">box 2</div>
+        <div class="item" id="box3">box 3</div>
+        
+    </div>
+    <div id="box4">box 4</div>
+    
+</body>
+</html>

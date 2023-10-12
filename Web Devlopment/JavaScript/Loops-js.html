@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi recusandae reprehenderit, sed unde, doloremque eaque quibusdam dicta similique ad ipsam a!
+    </div>
+    <script>
+        for(let i=0;i<3;i++){
+            console.log(i);
+        }
+        let array=new Array('Prachet','Pratham','Prit','Prince');
+        /*array.push(10)
+        let j=0;
+        for(let i=0;i<array.length;i++){
+            console.log(array[i],j);
+            j++;
+        }*/
+        array.forEach(function f(element){ //foreach loop
+            console.log(element);
+        })
+        for(element of array){//for of loop
+            console.log(element);
+        }
+        let student={
+            name:"Prachet",
+            branch:"computer engineering",
+            semester:5
+        }
+        //object iteration forin loop
+        for(key in student){
+            console.log(`The ${key} of student ${student[key]}`);
+        }
+        //while loop 
+        let i=2;
+        while(i>=0){
+           console.log(i);
+           i--;
+        }
+        do{
+            console.log(i);
+        }while(i>0);
+    </script>
+</body>
+</html>

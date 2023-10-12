@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Its methods</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgba(128, 97, 128);
+            align-items: center;
+            justify-content: center;
+            display:flex;
+            flex-direction: column;
+            height: 40rem;
+            /* padding:50px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="content">
+        </div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quis dolor quidem, et nobis a maiores nesciunt dolorem saepe non. Consequatur dolore reprehenderit molestias. Repellendus, reiciendis at facilis minima quaerat facere, voluptas amet, quod quibusdam earum ducimus illum dolores ipsam labore harum rerum quo maxime.</p>
+    </div>
+    <script>
+        var string = 'this"';
+        var str="this'";
+        var message="Hello Prachet how are you?";
+        var name="Prachet",temp=`${name} is good person ${message}`;
+        // console.log(string+str+message);
+        console.log(temp);
+        var len=name.length;
+        console.log(`Length is:\t\\n${len}`);
+        document.getElementById('content').innerHTML="<h3>This is dynamic paragraph added usig javascript<h3>"  
+    </script>
+</body>
+</html>

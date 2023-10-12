@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        /* globle variable */
+        :root{
+            --box-colorS: red;
+        }
+        body{
+            background-color: azure;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-content:center;
+        }
+        .box{
+            --box-color: blue;/*--varible_name*/
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            /* border:3px solid red; */
+            box-shadow: 10px 9px 7px var(--box-colorS);
+            margin: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            
+        </div>
+        <div class="box" id="box2">
+
+        </div>
+        <div class="box" id="box3">
+
+        </div>
+    </div>
+</body>
+</html>

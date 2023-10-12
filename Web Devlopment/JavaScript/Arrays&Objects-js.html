@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. In officiis ullam distinctio enim fuga soluta commodi dignissimos nisi recusandae deleniti libero laborum similique sunt, laudantium consequatur provident beatae, assumenda, totam itaque aspernatur nemo ab repellat perspiciatis? Sed in sequi maiores ad, quas facere aperiam magnam veniam, exercitationem corrupti totam. Dignissimos.</div>
+    <script>
+        let object={
+            name:'Prachet',
+            surname:'Patel',
+            age:19
+        };
+        console.log(object)
+        //let array=[1,3.99,'hello',object,undefined];
+        let array=new Array(10);//1 parameter for size else elements of array
+        array=array.sort();
+        array.push(object);
+        array.push(undefined);
+        for(let i in object){
+            console.log(i);
+        }
+        console.log(array,array[1]);
+    </script>
+</body>
+</html>

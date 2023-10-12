@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+      <!-- internal css -->
+      <style>
+        /* id selector */
+            #idselector{
+               color: blue;
+               background-color: black;
+            }
+            div{
+              
+              color: aqua;
+              background-color: black !important;
+            }
+            /* element selector */
+            h1{
+                border: 2px red;
+                color: goldenrod !important;
+            }
+            body{
+                background-color: black !important;
+            }
+            /* class selectyor */
+            .background{
+                background-color: brown !important;
+            }
+            /* grouping selector */
+            span,footer{
+                color: blue;
+                border: 2px solid red !important;
+                background-color: aquamarine;
+            }
+            </style> 
+<link rel="stylesheet" href="External.css">
+<!-- From internal and external css priority is given to which is written at lst as it will exeute last  -->
+</head>
+<body>
+<!-- <body style="background-color: black;"> -->
+    <!-- <h1 style="color:green ;">Using Inline and Internal css</h1> -->
+    <h1>Using Inline and Internal css</h1>
+    <div>
+    <!-- <div style="color:green ;" > -->
+        css : p{  color:    blue;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br> 
+                selector property valuebr <br>
+                (where)   (this)  (set) <br>
+           (class,id
+                attribute) <br>
+    Types: <br>
+    Inline css example &lt; p style="" &gt; not good pratice it is given more priority compare to internal css<br>
+    Internal CSS use css in head of markup(Modern name for html) <br>
+    What if 1000 or more line of code  <br>
+    we use  <br>
+    External CSS make seprate file for css !Best way and include that file to markup <br>
+    From internal and external css priority is given to which is written at lst as it will exeute last
+    </div>
+    <p id="idselector" class="background">Blue</p>
+    <span>Hello</span>
+    <footer>ending</footer>
+    <!-- Ids are unique and class are multiple -->
+</body>
+</html>

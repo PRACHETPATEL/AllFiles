@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(5,1fr);
+            grid-template-rows:repeat(5,3fr);
+            /* grid-column-gap: 2em;
+            grid-row-gap: 2em; */
+            grid-gap: 1rem;
+        }
+        .box{
+            border:3px solid brown;
+            background-color:blueviolet;
+            color:white;
+            padding:20px;
+        }
+        .box:first-child{
+            /* column number as input */
+            /* grid-column-start: 1;
+            grid-column-end:3;
+            grid-row-start: 1;
+            grid-row-end:3; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3 ;
+        }
+        .box:last-child{
+            /* grid-column: 5 / span 6; */
+            /* grid-row: 3 / span 3; */
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-7</div>
+        <div class="box">box-8</div>
+        <div class="box">box-9</div>
+        <div class="box">box-10</div>
+        <div class="box">box-11</div>
+        <div class="box">box-12</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding:0px;
+            /* background-color:black; */
+        }
+        .container{
+            background-color: yellowgreen;
+        }
+        .box{
+            background-color: green;
+            width: 10em;
+            height: 10em;
+            position: relative;
+            z-index: 1;
+            animation-name:prachet;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: none;
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            animation-direction:normal;
+            animation-timing-function: ease-in-out;
+            /* margin: auto; */
+        }
+        #box2{
+            animation:anime 3s infinite 0s normal ease-in-out;
+            background-color: rgb(28, 0, 128);
+            width: 10em;
+            height: 10em;
+            z-index: 0;
+            position: absolute;
+        }
+        @keyframes prachet{
+            0%{
+                    top:0%;
+                    left:-20%;
+              
+            }
+            100%{
+                top:0%;
+                left: 100%;
+            }
+        }
+        @keyframes anime{
+            from{
+                top:0;
+                left: -20%;
+            }
+            to{
+                top: 75%;
+                left:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

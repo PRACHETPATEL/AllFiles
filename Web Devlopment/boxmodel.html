@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            background-color: rgb(224, 224, 255);
+            border:3px solid rgb(0, 0, 170);
+            padding: 10px 10px; /* top right bottom left */
+            margin: 10px auto;/*y=top bottom x=left right*/
+            border-radius: 20px;
+            width: 50%;
+            align-items: center;
+        }
+        body{
+            background-color: rgb(255 214 214 / 16%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Heading 1</h3>
+       <p id="first">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi quidem eos illo possimus obcaecati,
+            cupiditate accusantium harum inventore a quos maxime? Ullam.</p>
+    </div>
+    <div class="container">
+        <h3>Heading 2</h3>
+        <p id="second"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi quidem eos illo possimus obcaecati,
+            cupiditate accusantium harum inventore a quos maxime? Ullam. </p>
+    </div>
+    <div class="container">
+        <h3> Heading 3</h3>
+        <p id="third"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi quidem eos illo possimus obcaecati,
+            cupiditate accusantium harum inventore a quos maxime? Ullam. </p>
+    </div>
+</body>
+</html>
