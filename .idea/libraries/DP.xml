@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="DP">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/DAA/Algorithms/DP" />
+      <root url="file://$PROJECT_DIR$/DAA/Searching" />
+      <root url="file://$PROJECT_DIR$/DAA/Sorting" />
+    </SOURCES>
+  </library>
+</component>
