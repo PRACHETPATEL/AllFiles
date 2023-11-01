@@ -1,0 +1,21 @@
+<div class="navbar">
+        <div class="navlogo"><a href="index.php">Dashboard</a></div>
+        <div class="navitem"><a href="registerstudent.php">Register</a></div>
+        <div class="navitem"><a href="uploaddocuments.php">Upload Documents</a></div>
+        <div class="navitem">
+            <a class="btn" href="logout.php">Logout</a>
+            <button type="button" class="btn navitem" id="profile" onclick="displayprofile()"></button>
+        </div>
+        
+</div>
+<div id="profileview"></div>
+<script>
+    let displayprofile=()=>{
+        const profile=document.getElementById("profileview");
+        if(profile.style.display=="none"){
+            profile.style.display="flex";
+        }else{
+            profile.style.display="none";
+        }
+    }
+</script>

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navlogo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.navitem{
+    font-size: 1.5rem;
+}
+.navitem a{
+    color: black;
+}
+.navitem a:hover{
+    color: goldenrod;
+}
+.navlogo a{
+    color: black;
+}
+#profile{
+    height: 8vh;
+    width: 8vh;
+    background: url(images/profile.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.navlogo a:hover{
+    color: goldenrod;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5%;
+    align-items:center;
+    height: 10vh;
+    border-bottom: 2px solid #bbb;
+}
+.item{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 35%;
+    height: 50vh;
+    opacity: 91%;
+    padding: 1em;
+    box-shadow: 1px 1px 100px 1px #8F91C2;
+    border-radius: 1em;
+}
+label{
+    color:#4D4AEF;
+    font-weight: 700;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+a{
+    text-decoration: none;
+    color:#4D4AEF;
+    font-weight: 700;
+}
+.btn{
+    background-color: #F7C300;
+    border: none;
+}
+.btn:hover{
+    background-color: #4C49F0;
+}
+.active{
+    font-weight: 800;
+    
+}
